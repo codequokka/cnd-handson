@@ -14,10 +14,10 @@
 | 7 | 共通 Gateway `handson-gateway` 作成 | 完了（PROGRAMMED=True） |
 | 8 | デモアプリ (`handson` ns) デプロイ | 完了（curl で 200 OK） |
 
-未実施・未確認:
-- ローカル PC のブラウザから `http://app.example.com` を開く確認
-- kubectl のシェル補完設定（任意）
-- `cilium connectivity test`（任意、約 10 分）
+追加確認（すべて完了）:
+- ローカル PC のブラウザから `http://app.example.com` を開く確認: OK
+- kubectl のシェル補完設定: OK
+- `cilium connectivity test`: 89 テスト（759 アクション）成功、失敗 0、46 テストはスキップ（未有効の機能向け）
 
 ## 全体の流れ
 
@@ -91,5 +91,4 @@
 
 ## 次にやること
 
-- ローカル PC のブラウザで `http://app.example.com` を確認
 - 次の chapter へ（例: `chapter_docker`、または `chapter_prometheus` / `chapter_argocd`）
